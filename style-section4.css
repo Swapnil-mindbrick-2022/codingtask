@@ -1,0 +1,82 @@
+#section4 {
+       
+}
+.content-container1{
+    display: flex;
+    flex-direction: row;
+}
+.left-section,
+.center-section,
+.right-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    flex: 1; /* Take remaining space in the flex container */
+    max-width: 200px; /* Set a specific width for the text */
+}
+
+.feature-img {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+    margin-right:25px; /* Adjust the spacing between text and image */
+}
+
+.feature h3 {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    color: black;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.logoo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.divider {
+    margin-top: 20px;
+}
+
+
+
+
+
+.title-container1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Align items vertically */
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+
+.title1 {
+    font-size: 24px;
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.underline1 {
+    border-bottom: 1px solid #000;
+    flex: 1;
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.small-text1 {
+    font-size: 12px;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+ 

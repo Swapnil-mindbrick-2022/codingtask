@@ -1,0 +1,169 @@
+html, body {
+    margin: 0;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Open Sans','Poppins' sans-serif;
+    line-height: 1.5;
+
+}
+
+.section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+    line-height: 1.5;
+    /* border:10px solid red; */
+    /* border: 2 px solid red; */
+}
+
+#section1 {
+    background-image: url('hero-banner-bg.jpg');
+    
+}
+
+#section1 .top-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 150px; */
+    margin:25vh;
+    margin-top: 4vh;
+}
+
+#section1 .logo {
+    max-width: 100px;
+}
+
+#section1 .links {
+    display: flex;
+    gap: 10px;
+    font-size: 0.5em;
+}
+
+#section1 .links a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+#section1 .links div {
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+#section1 .links div span {
+    margin-left: 5px;
+    background-color: #ffc107;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+#menu {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+#menu a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #555;
+    cursor: pointer;
+    margin-top:2px;
+    font-weight:bold;
+    
+}
+
+#liveOrganic {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.strong {
+    font-weight: bold;
+}
+.text {
+    text-align: left; /* Align text to the left */
+}
+
+#allCapitalText {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#shopNowButton {
+    margin-bottom:20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    height: 40px; /* Set the desired height */
+    width: full; /* Set the desired width */
+   
+}
+
+#shopNowButton:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    #section1 .top-nav {
+        padding: 10px;
+        margin-top: -5vh;
+    }
+
+    #section1 .links {
+        font-size: 0.4em;
+    }
+
+    #menu {
+        padding: 10px;
+    }
+
+    #liveOrganic {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    #allCapitalText {
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+
+    #shopNowButton {
+        padding: 8px 16px;
+    }
+}
