@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="style-section1.css">
     <link rel="stylesheet" href="style-section2.css">
     <link rel="stylesheet" href="style-section3.css">
@@ -14,13 +16,15 @@
 </head>
 <body>
   
-    <div id="menu">
-        
+    <div class="header">
+        <div id="hamburgerIcon" onclick="toggleMenu()">☰</div>
+        <img class="logooo" src="logo.png" alt="Logo">
+    </div>
+    <div id="menu" class="hidden">
         <a onclick="scrollToSection(2)">Primium Quality</a>
         <a onclick="scrollToSection(3)">Organic Goods</a>
         <a onclick="scrollToSection(4)">Naturix  Firm</a>
     </div>
-
     <div class="section" id="section1">
         <div class="top-nav">
             <img class="logo" src="logo.png" alt="Logo">
@@ -30,7 +34,7 @@
                 <a href="#">Shop</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact</a>
-                <div><img src="shop-cart.png"> <span>1</span></div>
+                <div id="cartCounter"><img src="shop-cart.png"> <span>0</span></div>
             </div>
         </div>
         <div class="text">
@@ -82,17 +86,18 @@
         <div class="section" id="section4">
             <div class="title-container1">
                 <span class="underline1"></span>
-                <h1 class="title1">We are <strong>Organic Farmfood</strong></h1>
+                <h4 class="title1">We are <span class="big-text">Organic Farmfood</span class="big-text"></h4>
                 <span class="underline1"></span>
             </div>
-            <p class="small-text1">——————— ABOUT MODI FARMFOOD ———————</p>
+            <p class="small-text1">——————— FEATURES NATURIX FARMFOOD ———————</p>
             
             <div class="content-container1">
           <div class="left-section">
                         <div class="feature">
                             <div class="text-content">
                             
-                            <h3>Always Fresh</h3>
+                            <h3>Premium Quality</h3>
+                            <p>———————</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy.</p>
                         </div>
                         <img src="gray-leaf.png" alt="Always Fresh" class="feature-img">
@@ -102,6 +107,7 @@
                             <div class="text-content">
                             
                                 <h3>Always Fresh</h3>
+                                <p>———————</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy.</p>
                             </div>
                             <img src="gray-leaf.png" alt="Always Fresh" class="feature-img">
@@ -109,7 +115,8 @@
                         <div class="feature">
                             <div class="text-content">
                             
-                                <h3>Always Fresh</h3>
+                                <h3>100% Natural</h3>
+                                <p>———————</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy.</p>
                             </div>
                             <img src="gray-leaf.png" alt="Always Fresh" class="feature-img">
@@ -125,7 +132,8 @@
                         <div class="feature">
                             <img src="gray-leaf.png" alt="Always Fresh" class="feature-img">
                             <div class="text-content">
-                                <h3>Always Fresh</h3>
+                                <h3>100% Organic Guarantee </h3>
+                                <p>———————</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy.</p>
                             </div>
                            
@@ -134,7 +142,8 @@
                         <div class="feature">
                             <img src="gray-leaf.png" alt="Always Fresh" class="feature-img">
                             <div class="text-content">
-                                <h3>Always Fresh</h3>
+                                <h3>Super Health</h3>
+                                <p>———————</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy.</p>
                             </div>
                            
@@ -142,7 +151,8 @@
                         <div class="feature">
                             <img src="gray-leaf.png" alt="Always Fresh" class="feature-img">
                             <div class="text-content">
-                                <h3>Always Fresh</h3>
+                                <h3>Best Quality</h3>
+                                <p>———————</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy.</p>
                             </div>
                             
@@ -184,29 +194,29 @@
                        <li ><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error totam vel voluptas eaque, ut nobis, 
                            quaerat facere tenetur beatae 
                            quam ab inventore hic labore dolores perspiciatis. Natus magnam rerum cupiditate?</p></li>
-                       <li><a href="#">125/5 Single Streen californiya, united state</a></li>
-                       <li><a href="http://www.modmarijuana.com"> www.modmarijuana.com</a></li>
-                       <li><a href="#">contact@modmarijuana.com</a></li>modmarijuana.com
+                       <li><a href="#">🏠 125/5 Single Streen californiya, united state</a></li>
+                       <li><a href="http://www.modmarijuana.com">🌐 www.modmarijuana.com</a></li>
+                       <li><a href="#">📩 contact@modmarijuana.com</a></li>
                      </ul>
                    </div>
                    <div class="footer-col">
                      <h4>information</h4>
                      <ul>
-                       <li><a href="#">About Our Shop</a></li>
-                       <li><a href="#">Top Sellers</a></li>
-                       <li><a href="#">Our Blog</a></li>
-                       <li><a href="#">New Products</a></li>
-                       <li><a href="#">Secure Shopping</a></li>
+                       <li><a href="#">🔴 About Our Shop</a></li>
+                       <li><a href="#">🔴 Top Sellers</a></li>
+                       <li><a href="#">🔴 Our Blog</a></li>
+                       <li><a href="#">🔴 New Products</a></li>
+                       <li><a href="#">🔴 Secure Shopping</a></li>
                      </ul>
                    </div>
                    <div class="footer-col">
                      <h4>my account</h4>
                      <ul>
-                       <li><a href="#">My Account</a></li>
-                       <li><a href="#">Discount</a></li>
-                       <li><a href="#">Persional Information</a></li>
-                       <li><a href="#">My address</a></li>
-                       <li><a href="#">Order History</a></li>
+                       <li><a href="#">🔴 My Account</a></li>
+                       <li><a href="#">🔴 Discount</a></li>
+                       <li><a href="#">🔴 Persional Information</a></li>
+                       <li><a href="#">🔴 My address</a></li>
+                       <li><a href="#">🔴 Order History</a></li>
                      </ul>
                    </div>
                    <div class="footer-col">

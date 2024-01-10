@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       price: "$50.00",
     },
     item4: {
-      img: "organic-center-leaf.png",
+      img: "product2.png",
       name: "Present commodo in velit",
       price: "$50.00",
     },
@@ -40,12 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Present commodo in velit",
       price: "$50.00",
     },
-    // ... other items ...
+    
   };
   var sliderContainer = document.getElementById("sliderContainer");
   var paginationContainer = document.querySelector(".slider-pagination");
 
-  // Populate the slider with cards
+
   for (var item in itemSlider) {
     var card = `
       <div class="card">
@@ -53,13 +53,14 @@ document.addEventListener("DOMContentLoaded", function () {
         <img class='slider-img' src="${itemSlider[item].img}" alt="${itemSlider[item].name}">
         <h2>${itemSlider[item].name}</h2>
         <p>${itemSlider[item].price}</p>
-        <button class="add-to-cart-btn">ADD TO CART</button>
+        
+        <button class="add-to-cart-btn" onclick="addToCart()">ADD TO CART</button>
       </div>
     `;
     sliderContainer.innerHTML += card;
   }
 
-  // Create dots for pagination
+
   var numberOfDots = Math.ceil(Object.keys(itemSlider).length / 4);
   for (var i = 0; i < numberOfDots; i++) {
     var dot = document.createElement("div");
@@ -71,9 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var dots = document.querySelectorAll(".dot");
   var slider = document.querySelector(".slider-container");
   var cardWidth = slider.querySelector('.card').offsetWidth;
-  var gap = 1; // Adjust the gap value if necessary
+  var gap = 1; 
 
-  // Function to update the active dot
   function updateActiveDot() {
     var scrollLeft = slider.scrollLeft;
     var currentDot = Math.round(scrollLeft / ((cardWidth + gap) * 4));
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Event listeners for dots
+
   dots.forEach(function (dot, index) {
     dot.addEventListener("click", function () {
       slider.scrollTo({
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Event listeners for arrow buttons
+  
   var leftButton = document.querySelector('.left-btn');
   var rightButton = document.querySelector('.right-btn');
 
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Event listeners for arrow buttons
+
 var leftButton = document.querySelector('.left-btn');
 var rightButton = document.querySelector('.right-btn');
 
@@ -126,6 +126,51 @@ rightButton.addEventListener('click', function() {
     slider.scrollLeft += (cardWidth + gap) * 4;
 });
 
-// Attach scroll event to update dots
+
 slider.addEventListener('scroll', updateActiveDot);
+});
+
+let cartCounter = 0; // Counter variable
+
+function addToCart() {
+ 
+  cartCounter++;
+  
+ 
+  const counterSpan = document.getElementById('cartCounter').querySelector('span');
+  counterSpan.textContent = cartCounter;
+
+  // Show toast message
+  toast.success('Item added to cart');
+}
+
+
+// function toggleMenu() {
+//   const menu = document.getElementById('menu');
+//   menu.classList.toggle('hidden');
+// }
+
+// document.addEventListener('click', function(event) {
+//   const menu = document.getElementById('menu');
+//   const hamburgerIcon = document.getElementById('hamburgerIcon');
+//   if (!menu.contains(event.target) && event.target !== hamburgerIcon) {
+//       menu.classList.add('hidden');
+//   }
+// });
+
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  if (menu.style.left === "-250px") {
+      menu.style.left = "0";
+  } else {
+      menu.style.left = "-250px";
+  }
+}
+
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('menu');
+  const hamburgerIcon = document.getElementById('hamburgerIcon');
+  if (!menu.contains(event.target) && event.target !== hamburgerIcon) {
+      menu.style.left = "-250px";
+  }
 });

@@ -1,20 +1,21 @@
 var items = {
     item1: {
-      img: "leaf-yellow.png",
+      img: "leaf-green.png",
       name: "Fresh From Naturix Farm",
       description: "Lorem ipsum dolor sit amet consectetuer adipising elit,sed diam nonummy",
     },
+   
     item2: {
-      img: "leaf-pink.png",
-      name: "100% Organic Goods",
-      description: "Lorem ipsum dolor sit amet consectetuer adipising elit,sed diam nonummy",
-    },
-    item3: {
       img: "leaf-yellow.png",
       name: "Premium Quality",
       description: "Lorem ipsum dolor sit amet consectetuer adipising elit,sed diam nonummy",
     },
-    // ... other items ...
+    item3: {
+      img: "leaf-pink.png",
+      name: "100% Organic Goods",
+      description: "Lorem ipsum dolor sit amet consectetuer adipising elit,sed diam nonummy",
+    },
+  
   };
 
   function createItemElement(item) {
