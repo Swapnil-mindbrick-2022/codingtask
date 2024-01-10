@@ -1,8 +1,7 @@
 #section4 {
     box-sizing: border-box;
-    border: solid 5px white; /* Border added */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Shadow added */    
-}
+    border: solid 5px white; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
 .content-container1{
     display: flex;
     flex-direction: row;
@@ -25,15 +24,15 @@
 }
 
 .text-content {
-    flex: 1; /* Take remaining space in the flex container */
-    max-width: 200px; /* Set a specific width for the text */
+    flex: 1; 
+    max-width: 200px; 
 }
 
 .feature-img {
     width: 75px;
     height: 75px;
     margin-left: 10px;
-    margin-right:25px; /* Adjust the spacing between text and image */
+    margin-right:25px; 
 }
 
 .feature h3 {

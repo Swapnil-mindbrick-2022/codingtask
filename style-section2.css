@@ -1,9 +1,9 @@
 #section2 {
     background-image: url('we-are-organic-bg.png');
-    background-size: contain; /* Make sure the entire image fits within the section */
-    background-position: center center; /* Center the image within the section */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    width: 100%; /* Full width of the parent element */
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
    
     text-align: center;
   }

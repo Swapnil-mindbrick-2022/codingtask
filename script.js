@@ -145,18 +145,7 @@ function addToCart() {
 }
 
 
-// function toggleMenu() {
-//   const menu = document.getElementById('menu');
-//   menu.classList.toggle('hidden');
-// }
 
-// document.addEventListener('click', function(event) {
-//   const menu = document.getElementById('menu');
-//   const hamburgerIcon = document.getElementById('hamburgerIcon');
-//   if (!menu.contains(event.target) && event.target !== hamburgerIcon) {
-//       menu.classList.add('hidden');
-//   }
-// });
 
 function toggleMenu() {
   const menu = document.getElementById('menu');

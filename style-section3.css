@@ -1,5 +1,5 @@
 #section3 {
-    background-color: lightgrey; /* Or use a specific grey color code like #D3D3D3 */
+    background-color: lightgrey; 
 }
  .content-container {
      display: flex; 
@@ -27,13 +27,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px; /* adjust as needed */
+    gap: 5px; 
     width: 50%;
 }
 
 .line {
     flex-grow: 1;
-    border-top: 4px solid blue; /* adjust as needed */
+    border-top: 4px solid blue;
 }
 
 .organic-center-leaf {
@@ -51,27 +51,27 @@
 .section, .content-container {
     padding: 0;
     margin: 0;
-    width: 100%; /* Ensure full width */
+    width: 100%;
 }
 
 .slider-btn {
     position: absolute;
-    top: 70%; /* Center vertically */
+    top: 70%; 
     transform: translateY(-50%);
     background: none;
     border: none;
     font-size: 2em;
     cursor: pointer;
     z-index: 10;
-    color: #333; /* Arrow color, change as needed */
+    color: #333; 
 }
 
 .left-btn {
-    left: 200px; /* Adjust as needed to position near the start of the cards */
+    left: 200px; 
 }
 
 .right-btn {
-    right: 200px; /* Adjust as needed to position near the end of the cards */
+    right: 200px; 
 }
 
 .slider-wrapper {
@@ -116,40 +116,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 0 0 23%; /* Each card will take up 25% of the slider-container's width */
-    margin-right: 2px; /* Adjusted for gap between cards */
+    flex: 0 0 23%; 
+    margin-right: 2px; 
     background: white;
     height: 250px;
     width: 110px;
     position: relative;
-    margin-right: 25px; /* Increased gap between cards */
+    margin-right: 25px; 
     padding: 10px;
     box-sizing: border-box;
-    border: solid 5px white; /* Border added */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Shadow added */
-    transition: transform 0.3s ease-in-out; /* Transition for hover effect */
+    border: solid 5px white; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    transition: transform 0.3s ease-in-out; 
     align-items: center;
     border-radius:15px;
     border:5 px solid black;
-    padding: 8px; /* This adds padding inside the card */
+    padding: 8px; 
     box-sizing: border-box;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Hover effect to scale card */
+    transform: scale(1.05); 
 }
 
 
 .card .discount {
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
-    /* ... rest of your styles for discount ... */
+    top: 10px; 
+    right: 10px; 
+  
 }
 /* Centering text and image inside the card */
 .card h2, .card p, .slider-img, .add-to-cart-btn {
     text-align: center;
-    /* Add any additional styles you need for these elements */
+ 
 }
 .discount {
     position: absolute;

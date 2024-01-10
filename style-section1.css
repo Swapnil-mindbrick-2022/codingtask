@@ -85,12 +85,12 @@ html, body {
     position: absolute;
     
     cursor: pointer;
-    z-index: 1001; /* Ensure the icon is above the image */
+    z-index: 1001; 
 }
 
 .logooo {
     display: block;
-    width: 200px; /* Adjust the width as needed */
+    width: 200px; 
     height: auto;
    
 }
@@ -98,7 +98,7 @@ html, body {
 #menu {
     position: fixed;
     top: 0;
-    left: -250px; /* Initially hide the menu off-screen */
+    left: -250px; 
     width: 250px;
     height: 25%;
     background-color: #fff;
@@ -109,7 +109,7 @@ html, body {
     gap: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    transition: left 0.3s; /* Add transition for smooth sliding effect */
+    transition: left 0.3s;
 }
 
 #menu a {
@@ -121,7 +121,7 @@ html, body {
 }
 
 .hidden {
-    left: -250px; /* Slide the menu off-screen when hidden */
+    left: -250px; 
 }
 #liveOrganic {
     font-size: 2em;
@@ -133,7 +133,7 @@ html, body {
     font-weight: bold;
 }
 .text {
-    text-align: left; /* Align text to the left */
+    text-align: left; 
 }
 
 #allCapitalText {
@@ -151,8 +151,8 @@ html, body {
     border-radius: 50px;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
-    height: 40px; /* Set the desired height */
-    width: full; /* Set the desired width */
+    height: 40px;
+    width: full; 
    
 }
 
